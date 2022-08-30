@@ -17,7 +17,9 @@ public class Main {
      */
     public static boolean CheckExpression(FibonacciNumb fibonacciNumb, int N) {
         int first = fibonacciNumb.getNumbers(N + 2);
-        int second = (int) Math.pow(2, N);
+        System.out.println("F(N+2) = " + first);
+        int second = 2 << N;
+        System.out.println("2^n = " + second);
         return first < second;
     }
 
